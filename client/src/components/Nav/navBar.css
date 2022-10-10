@@ -1,0 +1,18 @@
+.navDiv0 {
+    background-color:  rgba(108, 189, 255, 0.85);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+}
+
+.navDiv0 button {
+    color: white;
+    margin: 40px;
+    background-color: rgb(250, 51, 51)  ;
+    border-radius: 10px;
+    min-width: 120px;
+    min-height: 30px;
+    border-color: red;
+}

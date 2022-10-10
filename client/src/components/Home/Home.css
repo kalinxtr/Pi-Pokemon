@@ -1,0 +1,76 @@
+.primaryDiv {
+    background-image: url("../../myImages/HomeBG.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.CardsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.searchDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filterDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.paginateDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loadingDiv0 {
+    background-color: rgb(255, 208, 0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    min-height: 100vh;
+}
+.loadingDiv {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingDiv img{
+    height: 380px;
+    width: 500px;
+    border: 20px;
+    margin-left: 420px;
+    margin-top: 90px;
+    border-radius: 30px;
+    border-color: rgb(250, 51, 51);
+}
+
+.loadingDiv span {
+    margin-left: 515px;
+    font-weight: 700;
+    color: black;
+    font-size: larger;
+    text-shadow: white 0 2px;
+}
+
+.loadingDiv button {
+    margin-top: 20px;
+    margin-left: 620px;
+    width: 130px;
+    height: 60px;
+    background-color: rgb(250, 51, 51);
+    border-radius: 10px;
+    border-color: black;
+    color: white;
+    font-weight: 800;
+}

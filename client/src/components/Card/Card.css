@@ -1,0 +1,63 @@
+.primaryCardDiv{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgba(108, 189, 255, 0.85);
+    width: 400px;
+    height: 33.3%;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+}
+
+.primaryCardDiv:hover {
+        animation: myAnim 1s ease 0s 1 normal forwards;;
+        cursor: pointer;
+    }
+
+
+
+
+.style {
+    color: white;
+    margin-left: 8px;
+}
+.style2 {
+    color: white;
+}
+
+
+.imgDiv img {
+    max-width: 15rem;
+    max-height: 10rem;
+    width:fit-content;
+    border-radius: 10px;
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+.TypesDiv {
+margin: 10px;    
+
+}
+
+.eldiv {
+    border-top: 10px red solid;
+    background-color: rgb(250, 51, 51)  ;
+    border-radius: 0px 0px 10px 10px;
+    height: 100px;
+}
+
+@keyframes myAnim {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(1.1);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
