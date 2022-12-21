@@ -4,7 +4,7 @@ import axios from "axios"
 
 export function getAllPokemons(){
     return async function (dispatch){    
-        let aux = await axios.get("http://localhost:3001/pokemons")
+        let aux = await axios.get("/pokemons")
         return dispatch({
             type: "GET_ALL",
             payload: aux.data
@@ -14,7 +14,7 @@ export function getAllPokemons(){
 
 export function getTypes(){
     return async function(dispatch){
-        let aux= await axios.get("http://localhost:3001/types")
+        let aux= await axios.get("/types")
         return dispatch({
             type: "GET_TYPES",
             payload: aux.data
@@ -45,7 +45,7 @@ export function CreatedIn(payload){
 
 export function SearchPokemon(payload){
     return function (dispatch){
-        axios.get(`http://localhost:3001/pokemons?name=${payload}`)
+        axios.get(`/pokemons?name=${payload}`)
         .then((response) => {
             dispatch({
                 type: "SEARCH_POKEMON",
@@ -61,7 +61,7 @@ export function SearchPokemon(payload){
 export function PostPokemon(payload){
     return async function (dispatch){
         try{
-            const response = await axios.post("http://localhost:3001/newpokemon", payload)
+            const response = await axios.post("/newpokemon", payload)
             return response
         } catch(err){
             console.log(err)
@@ -71,7 +71,7 @@ export function PostPokemon(payload){
 
 export function getDetail(id){
     return async function (dispatch) {
-        let get = await axios.get(`http://localhost:3001/pokemons/${id}`)
+        let get = await axios.get(`/pokemons/${id}`)
         console.log(get,"+-*/-+-*/*-/-+")
         dispatch({
             type:"GET_DETAIL",
